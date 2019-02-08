@@ -7,7 +7,7 @@
         <client>0</client>
         <version>1.0.0</version>
         <downloads>
-            <downloadurl type="upgrade" format="zip">https://github.com/kicktemp/plg_system_kickeditarticledate/archive/1.0.0.zip</downloadurl>
+            <downloadurl type="upgrade" format="zip">https://github.com/Kicktemp/plg_system_kickeditarticledate/archive/1.0.0.zip</downloadurl>
         </downloads>
         <tags>
             <tag>stable</tag>

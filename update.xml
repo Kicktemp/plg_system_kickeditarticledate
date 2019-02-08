@@ -1,0 +1,17 @@
+<updates>
+    <update>
+        <name>System - KickEditarticledate</name>
+        <element>kickeditarticledate</element>
+        <type>plugin</type>
+        <folder>system</folder>
+        <client>0</client>
+        <version>1.0.0</version>
+        <downloads>
+            <downloadurl type="upgrade" format="zip">https://github.com/kicktemp/plg_system_kickeditarticledate/archive/1.0.0.zip</downloadurl>
+        </downloads>
+        <tags>
+            <tag>stable</tag>
+        </tags>
+        <targetplatform name="joomla" version="3.[789]"/>
+    </update>
+</updates>

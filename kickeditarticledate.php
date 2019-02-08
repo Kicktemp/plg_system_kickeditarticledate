@@ -22,7 +22,12 @@ class plgSystemKickEditarticledate extends JPlugin
 
         if ($context == 'com_content.articles.filter')
         {
-            JToolBarHelper::custom('articles.editdate', 'calendar.png', 'calendar.png', 'Edit Date', true);
+            $user  = JFactory::getUser();
+
+            if ($user->authorise('core.edit', 'com_content'))
+            {
+                JToolBarHelper::custom('articles.editdate', 'calendar.png', 'calendar.png', 'Edit Date', true);
+            }
         }
     }
 
@@ -39,7 +44,7 @@ class plgSystemKickEditarticledate extends JPlugin
             // Access checks.
             foreach ($ids as $i => $id)
             {
-                if (!$user->authorise('core.edit.state', 'com_content.article.' . (int) $id))
+                if (!$user->authorise('core.edit', 'com_content.article.' . (int) $id))
                 {
                     // Prune items that you can't change.
                     unset($ids[$i]);
